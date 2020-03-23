@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+  <h1>Grams Index Page</h1>
+  <ul>
+    <% for (let gram of grams) { %>
+      <li style="display: flex; flex-direction: row;">
+        <img src="<%= gram.srcUrl %>"/>
+        <p><%= gram.description %></p>
+        <p><%= gram.price %></p>
+      </li>
+    <% } %>
+  </ul>
+<%- include('../partials/header') %>
